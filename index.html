@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Vladislav Shulepov">
+  <meta name="subject" content="Table layout practice">
+  <meta name="description"
+    content="In this document, I practiced and developed the skills of creating html tables using 'table', 'tr', 'th', 'td' tags">
+  <meta name="geo.region" content="RUS-OMS">
+
+  <link rel="me" href="https://t.me/shulepov_vladislav">
+  <link rel="me" href="mailto:snarrpy@gmail.com">
+
+  <title>Practice tables in html layout</title>
+
+  <style>
+    table {
+      min-width: 720px;
+      background-color: #fcefc3;
+    }
+
+    caption {
+      font-weight: bold;
+    }
+
+    th,
+    td {
+      min-width: 1rem;
+      padding: 0.5rem 0.8rem;
+      text-align: center;
+      font-weight: bold;
+      outline: 2px solid #01160b;
+
+
+    }
+
+    .element-color-red {
+      background-color: #eeafb9;
+    }
+
+    .element-color-yellow {
+      background-color: #fbf38c;
+    }
+
+    .element-color-blue {
+      background-color: #95c9fa;
+    }
+
+    .lanthanides-table,
+    .actinides-table {
+      margin-top: 1rem;
+    }
+
+    .lanthanides-elements-color,
+    .actinides-elements-color {
+      background-color: #a3d783;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Periodic Table of the Elements</h1>
+  <table>
+    <caption>Table of Dmitry Ivanovich Mendeleev</caption>
+    <tr>
+      <th colspan="1" rowspan="2">Period</th>
+      <th colspan="1" rowspan="2">Rows</th>
+      <th colspan="10" rowspan="1">Group of elements</th>
+    </tr>
+
+
+    <!--* Group numbers -->
+    <tr>
+      <td>&#8544;</td> <!-- I -->
+      <td>&#8545;</td> <!-- II -->
+      <td>&#8546;</td> <!-- III -->
+      <td>&#8547;</td> <!-- IV -->
+      <td>&#8548;</td> <!-- V -->
+      <td>&#8549;</td> <!-- VI -->
+      <td>&#8550;</td> <!-- VII -->
+      <td colspan="3" rowspan="1">&#8551;</td> <!-- VIII -->
+    </tr>
+
+    <!--* first period, first row -->
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td class="element-color-red" title="Hydrogen">H</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="element-color-red" title="Helium">He</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <!--* second period, second row -->
+    <tr>
+      <td>2</td>
+      <td>2</td>
+      <td class="element-color-red" title="Lithium">Li</td>
+      <td class="element-color-red" title="Berylium">Be</td>
+      <td class="element-color-yellow" title="Borum">B</td>
+      <td class="element-color-yellow" title="Carboneum">C</td>
+      <td class="element-color-yellow" title="Nitrogenium">N</td>
+      <td class="element-color-yellow" title="Oxygenium	">O</td>
+      <td class="element-color-yellow" title="Fluorum">F</td>
+      <td class="element-color-yellow" title="Neon">Ne</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <!--* third period, third row -->
+    <tr>
+      <td>3</td>
+      <td>3</td>
+      <td class="element-color-red" title="Natrium">Na</td>
+      <td class="element-color-red" title="Magnesium">Mg</td>
+      <td class="element-color-yellow" title="Aluminium">Al</td>
+      <td class="element-color-yellow" title="Silicium">Si</td>
+      <td class="element-color-yellow" title="Phosphorus">P</td>
+      <td class="element-color-yellow" title="Sulfur, Sulphur">S</td>
+      <td class="element-color-yellow" title="Chlorum">Cl</td>
+      <td class="element-color-yellow" title="Argon">Ar</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <!--* fourth period, fourth row -->
+    <tr>
+      <td colspan="1" rowspan="2">4</td>
+      <td>4</td>
+      <td class="element-color-red" title="Kalium, Calium">K</td>
+      <td class="element-color-red" title="Calcium">Ca</td>
+      <td class="element-color-blue" title="Scandium">Sc</td>
+      <td class="element-color-blue" title="Titanium">Ti</td>
+      <td class="element-color-blue" title="Vanadium">V</td>
+      <td class="element-color-blue" title="Chromium">Cr</td>
+      <td class="element-color-blue" title="Manganum, Manganesium">Mn</td>
+      <td class="element-color-blue" title="Ferrum">Fe</td>
+      <td class="element-color-blue" title="Cobaltum">Co</td>
+      <td class="element-color-blue" title="Niccolum">Ni</td>
+    </tr>
+
+    <!--* fourth period, fifth row -->
+    <tr>
+      <td>5</td>
+      <td class="element-color-blue" title="Cuprum">Cu</td>
+      <td class="element-color-blue" title="Zincum">Zn</td>
+      <td class="element-color-yellow" title="Gallium">Ga</td>
+      <td class="element-color-yellow" title="Germanium">Ge</td>
+      <td class="element-color-yellow" title="Arsenicum">As</td>
+      <td class="element-color-yellow" title="Selenium">Se</td>
+      <td class="element-color-yellow" title="Bromum">Br</td>
+      <td class="element-color-yellow" title="Krypton, Crypton">Kr</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <!--* fifth period, sixth row -->
+    <tr>
+      <td colspan="1" rowspan="2">5</td>
+      <td>6</td>
+      <td class="element-color-red" title="Rubidium">Rb</td>
+      <td class="element-color-red" title="Strontium">Sr</td>
+      <td class="element-color-blue" title="Yttrium">Y</td>
+      <td class="element-color-blue" title="Zirconium">Zr</td>
+      <td class="element-color-blue" title="Niobium">Nb</td>
+      <td class="element-color-blue" title="Molybdaenum">Mo</td>
+      <td class="element-color-blue" title="Technetium">Tc</td>
+      <td class="element-color-blue" title="Ruthenium">Ru</td>
+      <td class="element-color-blue" title="Rhodium">Rh</td>
+      <td class="element-color-blue" title="Palladium">Rd</td>
+    </tr>
+
+    <!--* fifth period, seventh row -->
+    <tr>
+      <td>7</td>
+      <td class="element-color-blue" title="Argentum">Ag</td>
+      <td class="element-color-blue" title="Cadmium">Cd</td>
+      <td class="element-color-yellow" title="Indium">In</td>
+      <td class="element-color-yellow" title="Stannum">Sn</td>
+      <td class="element-color-yellow" title="Stibium">Sb</td>
+      <td class="element-color-yellow" title="Tellurium">Te</td>
+      <td class="element-color-yellow" title="Iodium, Jodium">I</td>
+      <td class="element-color-yellow" title="Xenon">Xe</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <!--* sixth period, eighth row -->
+    <tr>
+      <td colspan="1" rowspan="2">6</td>
+      <td>8</td>
+      <td class="element-color-red" title="Caesium">Cs</td>
+      <td class="element-color-red" title="Barium">Ba</td>
+      <td class="element-color-blue" title="Lanthanum">La*</td>
+      <td class="element-color-blue" title="Hafnium">Hf</td>
+      <td class="element-color-blue" title="Tantalum">Ta</td>
+      <td class="element-color-blue" title="Wolframium">W</td>
+      <td class="element-color-blue" title="Rhenium">Re</td>
+      <td class="element-color-blue" title="Osmium">Os</td>
+      <td class="element-color-blue" title="Iridium">Ir</td>
+      <td class="element-color-blue" title="Platinum">Pt</td>
+    </tr>
+
+    <!--* sixth period, ninth row -->
+    <tr>
+      <td>9</td>
+      <td class="element-color-blue" title="Aurum">Au</td>
+      <td class="element-color-blue" title="Hydrargyrum">Hg</td>
+      <td class="element-color-yellow" title="Thallium">Ti</td>
+      <td class="element-color-yellow" title="Plumbum">Pb</td>
+      <td class="element-color-yellow" title="Bismuthum">Bi</td>
+      <td class="element-color-yellow" title="Polonium">Po</td>
+      <td class="element-color-yellow" title="Astatum">At</td>
+      <td class="element-color-yellow" title="Radon">Rn</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <!--* seventh period, tenth row -->
+    <tr>
+      <td colspan="1" rowspan="2">7</td>
+      <td>10</td>
+      <td class="element-color-red" title="Francium">Fr</td>
+      <td class="element-color-red" title="Radium">Ra</td>
+      <td class="element-color-blue" title="Actinium">Ac**</td>
+      <td class="element-color-blue" title="Rutherfordium">Rf</td>
+      <td class="element-color-blue" title="Dubnium">Db</td>
+      <td class="element-color-blue" title="Seaborgium">Sg</td>
+      <td class="element-color-blue" title="Bohrium">Bh</td>
+      <td class="element-color-blue" title="Hassium">Hs</td>
+      <td class="element-color-blue" title="Meitnerium">Mt</td>
+      <td class="element-color-blue" title="Darmstadtium">Ds</td>
+    </tr>
+
+    <!--* seventh period, eleventh row -->
+    <tr>
+      <td>11</td>
+      <td class="element-color-blue" title="Roentgenium">Rg</td>
+      <td class="element-color-blue" title="Copernicium">Cn</td>
+      <td class="element-color-yellow" title="Nihonium">Nh</td>
+      <td class="element-color-yellow" title="Flerovium">Fl</td>
+      <td class="element-color-yellow" title="Moscovium">Mc</td>
+      <td class="element-color-yellow" title="Livermorium">Lv</td>
+      <td class="element-color-yellow" title="Tennessine">Ts</td>
+      <td class="element-color-yellow" title="Oganesson">Og</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="lanthanides-table">
+    <caption>* Lanthanides</caption>
+    <tr class="lanthanides-elements-color">
+      <td title="Lanthanum ">La</td>
+      <td title="Cerium ">Ce</td>
+      <td title="Praseodymium">Pr</td>
+      <td title="Neodymium">Nd</td>
+      <td title="Promethium">Pm</td>
+      <td title="Samarium">Sm</td>
+      <td title="Europium">Eu</td>
+      <td title="Gadolinium">Gd</td>
+      <td title="Terbium">Tb</td>
+      <td title="Dysprosium">Dy</td>
+      <td title="Holmium">Ho</td>
+      <td title="Erbium">Er</td>
+      <td title="Thulium">Tm</td>
+      <td title="Ytterbium">Yb</td>
+      <td title="Lutetium">Lu</td>
+    </tr>
+  </table>
+
+  <table class="actinides-table">
+    <caption>** Actinides</caption>
+    <tr class="actinides-elements-color">
+      <td title="Actinium ">Ac</td>
+      <td title="Thorium ">Th</td>
+      <td title="Protactinium">Pa</td>
+      <td title="Uranium">U</td>
+      <td title="Neptunium">Np</td>
+      <td title="Plutonium">Pu</td>
+      <td title="Americium">Am</td>
+      <td title="Curium">Cm</td>
+      <td title="Berkelium">Bk</td>
+      <td title="Californium">Cf</td>
+      <td title="Einsteinium">Es</td>
+      <td title="Fermium">Fm</td>
+      <td title="Mendelevium">Md</td>
+      <td title="Nobelium">No</td>
+      <td title="Lawrencium">Lr</td>
+    </tr>
+  </table>
+</body>
+
+</html>
